@@ -84,7 +84,7 @@ struct UIKitPeculiaritiesDemoView: View {
                 Text("Current text: \(uiKitText.isEmpty ? "-" : uiKitText)")
                     .font(.body.monospaced())
 
-                Text("Why UIKit here: native inputAccessoryView, delegate callbacks for text flow control, custom placeholder inside UITextView, and direct first responder management.")
+                Text("Benefits of this approach: \n - native inputAccessoryView \n - delegate callbacks for text flow control \n - custom placeholder inside UITextView \n - direct first responder management.")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

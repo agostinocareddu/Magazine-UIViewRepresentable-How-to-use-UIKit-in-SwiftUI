@@ -36,7 +36,7 @@ struct SliderDemoView: View {
                 Text("Current value: \(Int(uiKitSliderValue))")
                     .font(.title2.monospacedDigit())
 
-                Text("Benefits of this approach: \ncustom thumb image + min/max icons")
+                Text("Benefits of this approach: \n - custom thumb image \n - min/max icons customization")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

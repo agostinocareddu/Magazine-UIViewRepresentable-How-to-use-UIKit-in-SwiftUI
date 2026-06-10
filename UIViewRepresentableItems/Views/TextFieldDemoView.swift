@@ -50,7 +50,7 @@ struct TextFieldDemoView: View {
                         .foregroundStyle(.green)
                 }
 
-                Text("Benefits of this approach: \nleft icon, clear button while editing, return key callback")
+                Text("Benefits of this approach: \n - left icon \n - clear button while editing \n - return key callback")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
