@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  UIViewRepresentableItems
 //
 //  Created by Agostino Careddu on 15/04/26.
@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         NavigationStack {
             List {
 
                 Text("UIViewRepresentable Examples")
                     .bold()
-                    .padding(.vertical, 25)
+                    .font(.system(size: 20))
+                    .padding(.vertical, 40)
+                    .foregroundStyle(Color.white)
 
                 NavigationLink("Slider") {
                     SliderDemoView()
@@ -29,11 +31,20 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Demo App")
-            .listStyle(.plain)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Demo App")
+                        .font(.system(size: 32))
+                        .foregroundStyle(.red)
+                }
+            }
+            .foregroundStyle(Color.blue)
+            .listStyle(.automatic)
         }
     }
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
