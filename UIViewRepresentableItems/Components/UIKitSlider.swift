@@ -20,7 +20,7 @@ struct UIKitSlider: UIViewRepresentable {
         slider.setThumbImage(
             UIImage(
                 systemName: "figure.outdoor.rowing.circle.fill",
-                withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .bold, scale: .large)
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 30, weight: .bold, scale: .large)
             ),
             for: .normal
         )
