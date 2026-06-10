@@ -43,6 +43,14 @@ struct SliderDemoView: View {
             .padding()
         }
         .navigationTitle("Slider")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Slider")
+                    .font(.system(size: 30))
+                    .foregroundStyle(.red)
+            }
+        }
     }
 }
 

@@ -26,8 +26,8 @@ struct HomeView: View {
                     TextFieldDemoView()
                 }
 
-                NavigationLink("UIKit Focus") {
-                    UIKitPeculiaritiesDemoView()
+                NavigationLink("TextView") {
+                    TextViewDemoView()
                 }
             }
             .navigationTitle("Demo App")

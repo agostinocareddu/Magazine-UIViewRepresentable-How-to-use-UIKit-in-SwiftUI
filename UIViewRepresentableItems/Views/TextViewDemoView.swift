@@ -1,5 +1,5 @@
 //
-//  UIKitPeculiaritiesDemoView.swift
+//  TextViewDemoView.swift
 //  UIViewRepresentableItems
 //
 //  Created by Agostino Careddu on 20/05/26.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UIKitPeculiaritiesDemoView: View {
+struct TextViewDemoView: View {
     @State private var swiftUIText: String = ""
     @FocusState private var swiftUIFocused: Bool
 
@@ -90,12 +90,20 @@ struct UIKitPeculiaritiesDemoView: View {
             }
             .padding()
         }
-        .navigationTitle("UIKit Focus")
+        .navigationTitle("TextView")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("TextView")
+                    .font(.system(size: 30))
+                    .foregroundStyle(.red)
+            }
+        }
     }
 }
 
 #Preview {
     NavigationStack {
-        UIKitPeculiaritiesDemoView()
+        TextViewDemoView()
     }
 }

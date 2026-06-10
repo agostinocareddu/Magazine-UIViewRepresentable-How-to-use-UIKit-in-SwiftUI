@@ -57,6 +57,14 @@ struct TextFieldDemoView: View {
             .padding()
         }
         .navigationTitle("TextField")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("TextField")
+                    .font(.system(size: 30))
+                    .foregroundStyle(.red)
+            }
+        }
     }
 }
 
